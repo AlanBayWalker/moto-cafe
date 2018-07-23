@@ -1,0 +1,110 @@
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Main CSS */
+body {
+  color: #555;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+/* Header CSS */
+.main-header {
+  position: relative;
+}
+
+.logo {
+  /* background-color: #fff; */
+  height: 40px;
+  left: -35%;
+  position: absolute;
+  top: 2%;
+  width: 100%;
+}
+
+.header-1 {
+  background: #555 url("../images/motorcycle.jpg") no-repeat center;
+  background-size: cover;
+  height: 650px;
+}
+
+.header-2 {
+  padding: 100px 80px 100px 50px;
+  position: relative;
+}
+
+.header-2 h1 {
+  margin-bottom: 5px;
+}
+
+.header-2 .title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.social {
+  bottom: 30px;
+  position: absolute;
+}
+
+.social .fab {
+  margin-right: 10px;
+}
+
+/* Footer CSS */
+.main-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1200px) {
+  /* Header CSS */
+  .main-header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .logo {
+    left: -40%;
+  }
+
+  .header-1 {
+    flex: 1 50%;
+    height: 800px;
+  }
+
+  .header-2 {
+    flex: 1 50%;
+    padding-top: 200px;
+  }
+
+  /* Footer CSS */
+  .footer-container {
+    display: flex;
+  }
+
+  .main-footer h2 {
+    flex: 1 40%;
+  }
+
+  .main-footer p {
+    flex: 1 60%;
+  }
+}
